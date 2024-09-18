@@ -8,7 +8,7 @@
     <title>Portfolio - Hilaluddin Jauhary</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand fs-3 fw-bold" href="#">Hilaluddin Jauhary</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,31 +16,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Project</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#project">Project</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
     <section id="home" class="home container">
-      <div class="row d-flex align-items-center">
-        <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8 home-header">
           <h3 class="fw-semibold">Hi! I am</h3>
           <h1 class="fw-bold">Hilaluddin Jauhary</h1>
-          <p>I am Software Engineer based in Indonesia</p>
+          <p>I am Junior Web Developer based in Indonesia</p>
           <a class="btn button text-decoration-none" href="src/CV Hilaluddin Jauhary.pdf" download="">Resume (Download CV)</a>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <img class="w-100 rounded-circle" src="src/img/pasfoto_hilal.jpg" alt="foto_hilal" />
         </div>
       </div>
-      <div class="arrow d-flex flex-column align-items-center w-100 mt-5">
-        <a class="text-decoration-none text-dark" href="#about">More Info</a>
+      <a href="#about" class="text-decoration-none arrow d-flex flex-column align-items-center w-100 mt-5">
+        <div class="text-dark">More Info</div>
         <img id="arrow" class="mt-1" src="src/img/arrow.svg" alt="arrow icon" />
-      </div>
+      </a>
     </section>
 
     <section id="about" class="about container">
@@ -52,7 +52,7 @@
         <div class="about-exp-item">
           <div class="about-exp-item-header">
             <div>
-              <h5>Software Engineer</h5>
+              <h5>Junior Web Developer (Internship)</h5>
               <p>Walikota Jakarta Selatan (November 2021 - Januari 2022)</p>
             </div>
             <button class="btn button" onclick = slideToggle(event)>More Info</button>
@@ -62,6 +62,7 @@
               <li>Menganalisa sebuah sistem persuratan yang ada pada Walikota Jakarta Selatan</li>
               <li>Melakukan perancangan sebuah sistem persuratan dalam bentuk web pada Walikota Jakarta Selatan</li>
               <li>Berkolaborasi dengan kepala bagian untuk membuat konsep sistem persuratan dan prototype pada website</li>
+              <li>Membuat website sistem persuratan menggunakan HTML, CSS, Javascript, dan PHP</li>
             </ul>
           </div>
         </div>
@@ -85,10 +86,10 @@
 
     <section id="project" class="project container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
-          <p class="text-left">Project yang sudah saya kerjakan selama saya belajar tentang Web Developer dengan menggunakan HTML, CSS, Javascript, dan PHP dengan bantuan framework serta library seperti Bootstrap versi 5 dan jQuery. Hasil Project ditampilkan pada gambar di samping.</p>
+        <div class="col-12 col-lg-5">
+          <p class="text-left">Project yang sudah saya kerjakan selama saya belajar tentang Web Developer dengan menggunakan HTML, CSS, Javascript, dan PHP dengan bantuan framework serta library seperti Bootstrap versi 5 dan jQuery.</p>
         </div>
-        <div class="col project-img">
+        <div class="col-12 col-lg-6 project-img">
           <div id="project-1" class="project-img-items">
             <img src="src/img/project-1.png" alt="project-1">
           </div>
@@ -104,24 +105,24 @@
 
     <section id="contact" class="contact container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, totam, ea, commodi deserunt veritatis sunt omnis reiciendis ad eum aliquam similique! Amet, reiciendis? Temporibus cupiditate omnis, nisi obcaecati vel laboriosam doloremque officiis placeat ipsam tenetur sunt repudiandae explicabo blanditiis aut exercitationem. Minus beatae, perspiciatis ipsa eos modi qui facilis maiores!</p>
+        <div class="col-12 col-lg-6">
+            <p>Kontak saya ke sosial media yang tertera atau bisa isi form yang sudah dilampirkan.</p>
             <div class="row mt-4">
               <div class="col d-flex align-items-center">
-                <a target="_blank" href=""><img class="icon-contact" src="src/img/facebook.png" alt="facebook icon"></a>
-                <a class="text-decoration-none text-dark ms-1" href="">Hilaluddin Jauhary</a>
+                <a target="_blank" href="https://www.facebook.com/hilaluddinj/"><img class="icon-contact" src="src/img/facebook.png" alt="facebook icon"></a>
+                <a class="text-decoration-none text-dark ms-1" target="_blank" href="https://www.facebook.com/hilaluddinj/">Hilaluddin Jauhary</a>
               </div>
               <div class="col d-flex align-items-center">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img class="icon-contact" src="src/img/instagram.png" alt="instagram icon"></a>
-                <a class="text-decoration-none text-dark ms-1" href="">@alulhilal</a>
+                <a href="https://www.instagram.com/alulhilal_/" target="_blank" rel="noopener noreferrer"><img class="icon-contact" src="src/img/instagram.png" alt="instagram icon"></a>
+                <a class="text-decoration-none text-dark ms-1" target="_blank" href="https://www.instagram.com/alulhilal_/">@alulhilal</a>
               </div>
               <div class="col d-flex align-items-center">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img class="icon-contact" src="src/img/github.png" alt="github icon"></a>
-                <a class="text-decoration-none text-dark ms-1" href="">hilaluddinj</a>
+                <a href="https://github.com/hilaluddinj" target="_blank" rel="noopener noreferrer"><img class="icon-contact" src="src/img/github.png" alt="github icon"></a>
+                <a class="text-decoration-none text-dark ms-1" target="_blank" href="https://github.com/hilaluddinj">hilaluddinj</a>
               </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <form class="form-contact" onsubmit="onFormSubmit(event)">
             <div class="mb-3">
               <label for="inp-email" class="form-label">Email address</label>
